@@ -9,6 +9,7 @@ export default function App() {
         <a
           href="https://github.com/jennt55/wk5-react-weather-app"
           target="_blank"
+          rel="noreferrer"
         >
           Open Source Code on Github
         </a>{" "}
