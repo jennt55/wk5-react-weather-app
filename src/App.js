@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div className="App container">
       <Weather defaultCity="London" />
+
       <footer>
         <a
           href="https://github.com/jennt55/wk5-react-weather-app"
