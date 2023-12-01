@@ -5,7 +5,7 @@ import axios from "axios";
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
-
+  console.log(forecast);
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
@@ -18,7 +18,7 @@ export default function WeatherForecast(props) {
           <div className="col">
             <div className="WeatherForecast-day">Thu</div>
             <img
-              src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecast.condition.icon}.png`}
+              src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecast[0].condition.icon}.png`}
               alt="weather icon"
               width="42px"
             />{" "}
