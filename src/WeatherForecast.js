@@ -18,9 +18,7 @@ export default function WeatherForecast(props) {
           <div className="col">
             <div className="WeatherForecast-day">Thu</div>
             <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
-            forecast.condition.icon
-          }.png"
+              src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecast.condition.icon}.png`}
               alt="weather icon"
               width="42px"
             />{" "}
