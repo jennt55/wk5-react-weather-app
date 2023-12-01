@@ -16,7 +16,7 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col">
-            <div className="WeatherForecast-day">{forecast[0].time}</div>
+            <div className="WeatherForecast-day">Thu</div>
             <img
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
             forecast.condition.icon
