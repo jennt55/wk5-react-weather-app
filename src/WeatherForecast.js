@@ -17,19 +17,17 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col">
-            <WeatherForecastDay data={forecast[0]} />
-            <img
-              src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecast[0].condition.icon}.png`}
-              alt="weather icon"
-              width="42px"
-            />
-            <div className="WeatherForecast-temperature">
-              <span className="WeatherForecast-temperature-max">
-                {Math.round(forecast[0].temperature.maximum)}
-              </span>
-              <span className="WeatherForecast-temperature-min">
-                {Math.round(forecast[0].temperature.minimum)}
-              </span>
+            <div className="WeatherForecastDay">
+              <WeatherForecastDay data={forecast[0]} />
+
+              <div className="WeatherForecast-temperature">
+                <span className="WeatherForecast-temperature-max">
+                  {Math.round(forecast[0].temperature.maximum)}
+                </span>
+                <span className="WeatherForecast-temperature-min">
+                  {Math.round(forecast[0].temperature.minimum)}
+                </span>
+              </div>
             </div>
           </div>
         </div>
