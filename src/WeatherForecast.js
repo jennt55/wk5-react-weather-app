@@ -17,18 +17,7 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col">
-            <div className="WeatherForecastDay">
-              <WeatherForecastDay data={forecast[0]} />
-
-              <div className="WeatherForecast-temperature">
-                <span className="WeatherForecast-temperature-max">
-                  {Math.round(forecast[0].temperature.maximum)}
-                </span>
-                <span className="WeatherForecast-temperature-min">
-                  {Math.round(forecast[0].temperature.minimum)}
-                </span>
-              </div>
-            </div>
+            <WeatherForecastDay data={forecast[0]} />
           </div>
         </div>
       </div>
